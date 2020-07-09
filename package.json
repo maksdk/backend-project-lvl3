@@ -25,7 +25,8 @@
   },
   "homepage": "https://github.com/maksdk/backend-project-lvl3#readme",
   "dependencies": {
-    "commander": "^5.0.0",
+    "axios": "^0.19.2",
+    "commander": "^5.1.0",
     "lodash": "^4.17.15"
   },
   "devDependencies": {

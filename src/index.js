@@ -1,5 +1,6 @@
 // @ts-check
 
-export default () => {
-  console.log('Run');
+export default (href, outputPath) => {
+  console.log('href', href);
+  console.log('outputPath', outputPath);
 };
