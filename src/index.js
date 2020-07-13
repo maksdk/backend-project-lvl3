@@ -5,8 +5,17 @@ import axios from 'axios';
 
 const generateFileName = (href) => href.replace(/(^\w+:|^)\/\//, '').replace(/[^A-Za-z\d]/g, '-');
 
-export default (href, outputPath) => {
-  axios.get(href)
+// const load = (href, httpService = axios) => {
+//   return httpService.get(href)
+//     .then((res) => res.data);
+// };
+
+// const write = (outputPath, name, writeFunc = fs.writeFile) => {
+//   writeFunc(path.join(outputPath, `${generateFileName(href)}.html`), data)
+// };
+
+export default (href, outputPath, httpService = axios) => {
+  return httpService.get(href)
     .then((res) => res.data)
     .then((data) => fs.writeFile(path.join(outputPath, `${generateFileName(href)}.html`), data))
     .catch((err) => {

@@ -6,6 +6,9 @@
   "bin": {
     "page-loader": "dist/bin/index.js"
   },
+  "jest": {
+    "testEnvironment": "node"
+  },
   "scripts": {
     "debug": "babel src --out-dir .debug-compiled --source-maps",
     "build": "babel src --out-dir dist --source-maps inline",
@@ -42,6 +45,7 @@
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-jest": "^23.18.0",
-    "jest": "^25.5.4"
+    "jest": "^25.5.4",
+    "nock": "^13.0.2"
   }
 }
