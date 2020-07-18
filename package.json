@@ -1,6 +1,6 @@
 {
   "name": "backend-project-lvl3-maksdk",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "hexlet project",
   "main": "dist/index.js",
   "bin": {
@@ -29,6 +29,7 @@
   "homepage": "https://github.com/maksdk/backend-project-lvl3#readme",
   "dependencies": {
     "axios": "^0.19.2",
+    "cheerio": "^1.0.0-rc.3",
     "commander": "^5.1.0",
     "lodash": "^4.17.15"
   },
